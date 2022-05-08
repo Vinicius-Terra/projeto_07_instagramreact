@@ -57,6 +57,13 @@ function Sugestoes () {
     }]
 
 
+    const componentesSugestao = sugestao.map(obj =>  <Sugestao 
+      image = {obj.image}
+      name = {obj.name}
+      status = {obj.status}
+    /> )
+
+
 
   return (
     <div class="sugestoes">
@@ -65,11 +72,7 @@ function Sugestoes () {
         <div>Ver tudo</div>
       </div>
 
-      stories.map(function (obj) { <Sugestao 
-        image = {obj.image}
-        name = {obj.name}
-        status = {obj.status}
-      /> })
+      {componentesSugestao}
 
     </div>
   );

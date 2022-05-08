@@ -37,14 +37,14 @@ function Stories () {
     user: "memeriagourmet"}
   ]
 
-
- 
+  const	componentesStory =  stories.map( obj =>   <Story image = {obj.image}
+  user = {obj.user} /> );
+                            
 
   return (
     <div class="stories">
                   
-			stories.map(function (obj) { <Story image = {obj.image}
-        user = {obj.user} /> })
+      {componentesStory}
 
       <div class="setinha">
           <ion-icon name="chevron-forward-circle"></ion-icon>
@@ -87,18 +87,21 @@ function Posts () {
     likesNumbers : "99.159"  
     }]
 
+    const compontesPost = post.map(obj =>  <Post 
+      userImage = {obj.userImage}
+      user = {obj.user}
+      contentImage = {obj.contentImage}
+      likedImage = {obj.likedImage}
+      likedName = {obj.likedName}
+      likesNumbers = {obj.likesNumbers}
+    /> )
+
+
   return (
     <div class="posts">
       
+    {compontesPost}
 
-      stories.map(function (obj) { <Post 
-        userImage = {obj.userImage}
-        user = {obj.user}
-        contentImage = {obj.contentImage}
-        likedImage = {obj.likedImage}
-        likedName = {obj.likedName}
-        likesNumbers = {obj.likesNumbers}
-      /> })
 
 
     </div>
