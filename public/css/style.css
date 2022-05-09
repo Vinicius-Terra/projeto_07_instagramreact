@@ -310,6 +310,19 @@ body {
   display: none !important;
 }
 
+.Invisivel {
+  display: none
+}
+
+.Liked {
+  color: red;
+  visibility: visible;
+}
+
+.Visivel {
+  visibility: visible;
+}
+
 @media (max-width: 935px) {
   .sidebar {
     display: none;
